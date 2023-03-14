@@ -129,7 +129,7 @@ class Sugar {
       foregroundColor: ButtonStyleButton.allOrNull<Color>(foregroundColor),
       overlayColor: ButtonStyleButton.allOrNull<Color>(overlayColor),
       shadowColor: ButtonStyleButton.allOrNull<Color>(shadowColor),
-      surfaceTintColor: ButtonStyleButton.allOrNull<Color>(surfaceTintColor),
+      // surfaceTintColor: ButtonStyleButton.allOrNull<Color>(surfaceTintColor),
       elevation: MaterialStateProperty.all(elevation),
       padding: ButtonStyleButton.allOrNull<EdgeInsetsGeometry>(padding),
       minimumSize: ButtonStyleButton.allOrNull<Size>(minimumSize),

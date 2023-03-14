@@ -31,7 +31,9 @@ dev_dependencies:
 # Switch to another stable flutter version
 dependency_overrides:
    fair_version:
-     path: ../../flutter_version/flutter_3_3_0
+     path: ../../flutter_version/flutter_2_5_0
+   fair_annotation:
+     path: ../../annotation
 
 #dependency_overrides:
 #   fair_version:

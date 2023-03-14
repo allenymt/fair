@@ -172,7 +172,7 @@ FairWidgetBinding provider = () {
         foregroundColor: paramsObj.foregroundColor,
         overlayColor: paramsObj.overlayColor,
         shadowColor: paramsObj.shadowColor,
-        surfaceTintColor: paramsObj.surfaceTintColor,
+        // surfaceTintColor: paramsObj.surfaceTintColor,
         elevation: paramsObj.elevation,
         padding: paramsObj.padding,
         minimumSize: paramsObj.minimumSize,
