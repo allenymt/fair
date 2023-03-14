@@ -19,7 +19,7 @@ dependencies:
     path: ../../fair
   dio: ^4.0.0
   permission_handler: 6.0.1
-  image_picker: ^0.8.4+1
+  image_picker: <=0.8.4+4
   path: ^1.8.0
 
 dev_dependencies:
@@ -30,10 +30,11 @@ dev_dependencies:
 
 # Switch to another stable flutter version
 dependency_overrides:
-   fair_version:
-     path: ../../flutter_version/flutter_2_5_0
-   fair_annotation:
-     path: ../../annotation
+  fair_version:
+    path: ../../flutter_version/flutter_2_5_0
+  fair_annotation:
+    path: ../../annotation
+  flutter_plugin_android_lifecycle: <=2.0.4
 
 #dependency_overrides:
 #   fair_version:
