@@ -21,40 +21,25 @@
             "mainAxisAlignment": "#(MainAxisAlignment.center)",
             "children": [
               {
-                "className": "Sugar.ifEqual",
-                "pa": [
-                  "^(_count)",
-                  2
-                ],
+                "className": "Card",
                 "na": {
-                  "falseValue": {
-                    "className": "Image.asset",
-                    "pa": [
-                      "assets/image/logo.png"
-                    ]
-                  },
-                  "trueValue": {
-                    "className": "Image.asset",
-                    "pa": [
-                      "assets/image/logo2.png"
-                    ]
-                  }
-                }
-              },
-              {
-                "className": "Padding",
-                "na": {
-                  "padding": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "top": 20
-                    }
-                  },
+                  "clipBehavior": "#(Clip.hardEdge)",
                   "child": {
-                    "className": "Text",
-                    "pa": [
-                      "#(_count = $_count)"
-                    ]
+                    "className": "Padding",
+                    "na": {
+                      "padding": {
+                        "className": "EdgeInsets.only",
+                        "na": {
+                          "top": 20
+                        }
+                      },
+                      "child": {
+                        "className": "Text",
+                        "pa": [
+                          "#(_count = $_count)"
+                        ]
+                      }
+                    }
                   }
                 }
               },

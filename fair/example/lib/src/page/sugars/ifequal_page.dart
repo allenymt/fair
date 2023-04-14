@@ -57,9 +57,12 @@ class _State extends State<IfEqualPage> {
             // Sugar.ifEqual(_count, 2,
             //     falseValue: Image.asset('assets/image/logo.png'),
             //     trueValue: Image.asset('assets/image/logo2.png')),
-            Padding(
-              padding: EdgeInsets.only(top: 20),
-              child: Text('_count = $_count'),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: Padding(
+                padding: EdgeInsets.only(top: 20),
+                child: Text('_count = $_count'),
+              ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 20),

@@ -20,7 +20,11 @@ class FairNet extends IFairPlugin {
     return _photoSelector;
   }
 
-  Future<dynamic> request(dynamic map) async {
+
+  @override
+  Future<dynamic> request(dynamic map,
+      // do your business logic in this call back
+          {Future<Map?> Function(Map reqData)? run}) async {
     if (map == null) {
       return;
     }

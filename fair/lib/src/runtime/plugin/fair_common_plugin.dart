@@ -89,7 +89,7 @@ mixin FairCommonPluginMixin {
   Future<dynamic> request(
     dynamic map,
     // do your business logic in this call back
-    Future<Map?> Function(Map reqData) run,
+      {Future<Map?> Function(Map reqData)? run}
   ) async {
     if (map == null) {
       return;
@@ -113,7 +113,7 @@ mixin FairCommonPluginMixin {
 
     final completeCallback = request['callback'];
 
-    final response = await run(request);
+    final response = await run!(request);
 
     // 需要判断发起方的请求是dart端还是js端
     if (isDart) {
